@@ -15,7 +15,9 @@ class AppBarWidget extends StatelessWidget {
         children: [
           // -------------drawer icon-------------
           InkWell(
-            onTap: (){},
+            onTap: (){
+              Scaffold.of(context).openDrawer();
+            },
             child: Container(
               padding: EdgeInsets.all(8),
               child: Icon(CupertinoIcons.bars),

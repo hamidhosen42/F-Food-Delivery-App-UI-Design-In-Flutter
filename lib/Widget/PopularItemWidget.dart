@@ -88,7 +88,7 @@ class PopularItemWidget extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.red)),
+                       color: Colors.red)),
                 Icon(
                   Icons.favorite_outline,
                   color: Colors.red,

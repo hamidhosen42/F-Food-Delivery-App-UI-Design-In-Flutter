@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
 import '../Widget/CategoriesWidget.dart';
+import '../Widget/DrawerWidget.dart';
 import '../Widget/NewestItemsWidget.dart';
 import '../Widget/PopularItemWidget.dart';
 import '../Widget/SearchBar.dart';
@@ -53,6 +54,7 @@ class HomePage extends StatelessWidget {
           NewestItemsWidget(),
         ],
       ),
+      drawer: DrawerWidget(),
       floatingActionButton: Container(
         decoration:
             BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: [
