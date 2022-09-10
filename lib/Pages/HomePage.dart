@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
 import '../Widget/CategoriesWidget.dart';
+import '../Widget/NewestItemsWidget.dart';
 import '../Widget/PopularItemWidget.dart';
 import '../Widget/SearchBar.dart';
 
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
           ),
           CategoriesWidget(),
 
-          // popular Items Widget
+          // ---------popular Items Widget----------
           Padding(
             padding: const EdgeInsets.only(left: 15, top: 10),
             child: Text(
@@ -39,6 +40,16 @@ class HomePage extends StatelessWidget {
             ),
           ),
           PopularItemWidget(),
+
+          // --------------Newest Item-------------
+          Padding(
+            padding: const EdgeInsets.only(left: 15, top: 10),
+            child: Text(
+              "Newest",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+          ),
+          NewestItemsWidget(),
         ],
       ),
     );

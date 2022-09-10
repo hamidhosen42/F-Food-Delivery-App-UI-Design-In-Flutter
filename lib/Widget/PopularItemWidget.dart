@@ -11,7 +11,7 @@ class PopularItemWidget extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
         child: Row(
           children: [
             PopulerItem("assets/images/biryani.png", "Chiken Biryani",
@@ -32,7 +32,7 @@ class PopularItemWidget extends StatelessWidget {
 
   Padding PopulerItem(image, text, subtext) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 7),
       child: Container(
         height: 235,
         width: 150,
