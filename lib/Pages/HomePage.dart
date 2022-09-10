@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
@@ -51,6 +52,25 @@ class HomePage extends StatelessWidget {
           ),
           NewestItemsWidget(),
         ],
+      ),
+      floatingActionButton: Container(
+        decoration:
+            BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: [
+          BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 10,
+              offset: Offset(0, 3))
+        ]),
+        child: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.white,
+          child: Icon(
+            CupertinoIcons.cart,
+            color: Colors.red,
+            size: 30,
+          ),
+        ),
       ),
     );
   }
