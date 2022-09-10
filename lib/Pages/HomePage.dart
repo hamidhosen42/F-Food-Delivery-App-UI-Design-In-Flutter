@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
 import '../Widget/CategoriesWidget.dart';
+import '../Widget/PopularItemWidget.dart';
 import '../Widget/SearchBar.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,10 +22,23 @@ class HomePage extends StatelessWidget {
 
           // ---------category----------
           Padding(
-            padding: const EdgeInsets.only(left: 15,top: 20),
-            child: Text("Categories",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+            padding: const EdgeInsets.only(left: 15, top: 20),
+            child: Text(
+              "Categories",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
           ),
           CategoriesWidget(),
+
+          // popular Items Widget
+          Padding(
+            padding: const EdgeInsets.only(left: 15, top: 10),
+            child: Text(
+              "Popular",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+          ),
+          PopularItemWidget(),
         ],
       ),
     );

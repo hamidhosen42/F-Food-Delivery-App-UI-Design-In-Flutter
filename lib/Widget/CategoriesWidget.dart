@@ -14,12 +14,12 @@ class CategoriesWidget extends StatelessWidget {
         child: Row(
           children: [
             // -------single Item----------
-            SingleItem("assets/images/drink.png"),
             SingleItem("assets/images/biryani.png"),
             SingleItem("assets/images/burger.png"),
             SingleItem("assets/images/pizza.png"),
             SingleItem("assets/images/biryani.png"),
-            SingleItem("assets/images/salan.png")
+            SingleItem("assets/images/salan.png"),
+            SingleItem("assets/images/drink.png"),
           ],
         ),
       ),
