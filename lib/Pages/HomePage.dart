@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
+import '../Widget/CategoriesWidget.dart';
 import '../Widget/SearchBar.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,6 +18,13 @@ class HomePage extends StatelessWidget {
 
           // --------search bar-----------
           SearchBar(),
+
+          // ---------category----------
+          Padding(
+            padding: const EdgeInsets.only(left: 15,top: 20),
+            child: Text("Categories",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+          ),
+          CategoriesWidget(),
         ],
       ),
     );
