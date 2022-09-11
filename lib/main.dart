@@ -40,25 +40,25 @@ class MyApp extends StatelessWidget {
               image: "assets/images/burger.png",
               text: "Hot Burger",
               subText:
-                  "One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken Biryani is the epitome of a one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken Biryani recipe. If you are also craving that, then you need not go anywhere as we have got this super-easy biryani recipe for you. So, what are you waiting for? Do try this delicious Chicken Biryani recipe and enjoy it with your loved ones.",
+                  "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt.",
             ),
         "itemPage2": (context) => ItemPage(
               image: "assets/images/pizza.png",
               text: "Hot Pizza",
               subText:
-                  "One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken Biryani is the epitome of a one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken Biryani recipe. If you are also craving that, then you need not go anywhere as we have got this super-easy biryani recipe for you. So, what are you waiting for? Do try this delicious Chicken Biryani recipe and enjoy it with your loved ones.",
+                  "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.",
             ),
         "itemPage3": (context) => ItemPage(
               image: "assets/images/salan.png",
               text: "Chiken Salan",
               subText:
-                  "One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken Biryani is the epitome of a one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken Biryani recipe. If you are also craving that, then you need not go anywhere as we have got this super-easy biryani recipe for you. So, what are you waiting for? Do try this delicious Chicken Biryani recipe and enjoy it with your loved ones.",
+                  "Chicken salan is just so pure and warming, a simple and satisfying hug in a bowl. It’s pretty straightforward to make with a few basic ingredients we all probably have on hand if we cook Desi food on the regular. While it requires a few additional whole spices to elevate the curry, they are completely optional – though highly recommended!.",
             ),
         "itemPage4": (context) => ItemPage(
               image: "assets/images/drink.png",
               text: "Cold Drink",
               subText:
-                  "One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken Biryani is the epitome of a one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken Biryani recipe. If you are also craving that, then you need not go anywhere as we have got this super-easy biryani recipe for you. So, what are you waiting for? Do try this delicious Chicken Biryani recipe and enjoy it with your loved ones.",
+                  "Soft drink, any of a class of nonalcoholic beverages, usually but not necessarily carbonated, normally containing a natural or artificial sweetening agent, edible acids, natural or artificial flavours, and sometimes juice. Natural flavours are derived from fruits, nuts, berries, roots, herbs, and other plant sources. Coffee, tea, milk, cocoa, and undiluted fruit and vegetable juices are not considered soft drinks.",
             ),
       },
     );

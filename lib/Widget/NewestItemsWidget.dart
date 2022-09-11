@@ -44,7 +44,7 @@ class NewestItemsWidget extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                 Navigator.pushNamed(context, "itemPag4");
+                 Navigator.pushNamed(context, "itemPage4");
               },
               child: NewestItem("assets/images/drink.png", "Cold Drink",
                   "Test Our Cold Drink,We Provide Our Great Foods"),
