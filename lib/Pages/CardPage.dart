@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../Widget/AppBarWidget.dart';
+import '../Widget/CartBottomNavBar.dart';
+import '../Widget/DrawerWidget.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -107,6 +109,8 @@ class CartPage extends StatelessWidget {
           ),
         ],
       ),
+       drawer: DrawerWidget(),
+       bottomNavigationBar: CartBottomNavBar(),
     );
   }
 
@@ -177,7 +181,7 @@ class CartPage extends StatelessWidget {
                 child: Container(
                   width: 35,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Color.fromARGB(255, 183, 111, 105),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(

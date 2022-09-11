@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Food App",
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFFF5f5F3),
+        scaffoldBackgroundColor: Color.fromARGB(255, 231, 231, 213),
       ),
       // themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
