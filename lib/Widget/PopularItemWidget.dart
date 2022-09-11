@@ -21,14 +21,34 @@ class PopularItemWidget extends StatelessWidget {
               child: PopulerItem("assets/images/biryani.png", "Chiken Biryani",
                   "Test Our Hot Biryani"),
             ),
-            PopulerItem("assets/images/burger.png", "Hot Burger",
-                "Test Our Hot Burger"),
-            PopulerItem(
-                "assets/images/pizza.png", "Hot Pizza", "Test Our Hot Pizza"),
-            PopulerItem(
-                "assets/images/salan.png", "Chiken Salan", "Test Chiken Salan"),
-            PopulerItem(
-                "assets/images/drink.png", "Cold Drink", "Test Cold Drink"),
+            InkWell(
+               onTap: (){
+                Navigator.pushNamed(context, "itemPage1");
+              },
+              child: PopulerItem("assets/images/burger.png", "Hot Burger",
+                  "Test Our Hot Burger"),
+            ),
+            InkWell(
+               onTap: (){
+                Navigator.pushNamed(context, "itemPage2");
+              },
+              child: PopulerItem(
+                  "assets/images/pizza.png", "Hot Pizza", "Test Our Hot Pizza"),
+            ),
+            InkWell(
+               onTap: (){
+                Navigator.pushNamed(context, "itemPage3");
+              },
+              child: PopulerItem(
+                  "assets/images/salan.png", "Chiken Salan", "Test Chiken Salan"),
+            ),
+            InkWell(
+               onTap: (){
+                Navigator.pushNamed(context, "itemPage4");
+              },
+              child: PopulerItem(
+                  "assets/images/drink.png", "Cold Drink", "Test Cold Drink"),
+            ),
           ],
         ),
       ),

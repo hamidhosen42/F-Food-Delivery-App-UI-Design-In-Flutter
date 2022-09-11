@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, sized_box_for_whitespace
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables, prefer_typing_uninitialized_variables
 
 import 'package:clippy_flutter/clippy_flutter.dart';
 import 'package:flutter/cupertino.dart';
@@ -12,6 +12,11 @@ import '../Widget/ItemBottomNavBar.dart';
 // import 'package:clippy_flutter/clippy_flutter.dart';
 
 class ItemPage extends StatelessWidget {
+  final image;
+  final text;
+  final subText;
+  ItemPage({required this.image,this.text, this.subText});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +26,7 @@ class ItemPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: Image.asset(
-              "assets/images/biryani.png",
+              image,
               height: 250,
               width: double.infinity,
             ),
@@ -71,7 +76,7 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Hot Biryani",
+                          Text(text,
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           Container(
@@ -104,7 +109,7 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken Biryani is the epitome of a one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken Biryani recipe. If you are also craving that, then you need not go anywhere as we have got this super-easy biryani recipe for you. So, what are you waiting for? Do try this delicious Chicken Biryani recipe and enjoy it with your loved ones.",
+                      subText,
                       style: TextStyle(
                         fontSize: 15,
                       ),

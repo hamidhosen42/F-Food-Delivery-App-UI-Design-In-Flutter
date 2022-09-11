@@ -15,27 +15,37 @@ class NewestItemsWidget extends StatelessWidget {
         child: Column(
           children: [
             InkWell(
-              onTap: (() {}),
+              onTap: () {
+                 Navigator.pushNamed(context, "itemPage");
+              },
               child: NewestItem("assets/images/biryani.png", "Chiken Biryani",
                   "Test Our Chiken Biryani,We Provide Our Great Foods"),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                 Navigator.pushNamed(context, "itemPage1");
+              },
               child: NewestItem("assets/images/burger.png", "Hot Burger",
                   "Test Our Hot Burger,We Provide Our Great Foods"),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                 Navigator.pushNamed(context, "itemPage2");
+              },
               child: NewestItem("assets/images/pizza.png", "Hot Pizza",
                   "Test Our Hot Pizza,We Provide Our Great Foods"),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                 Navigator.pushNamed(context, "itemPage3");
+              },
               child: NewestItem("assets/images/salan.png", "Chiken Salan",
                   "Test Our Hot Chiken Salan,We Provide Our Great Foods"),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                 Navigator.pushNamed(context, "itemPag4");
+              },
               child: NewestItem("assets/images/drink.png", "Cold Drink",
                   "Test Our Cold Drink,We Provide Our Great Foods"),
             ),
