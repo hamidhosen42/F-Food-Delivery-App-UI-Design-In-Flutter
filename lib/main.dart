@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/Pages/ItemPage.dart';
 
 import 'Pages/CardPage.dart';
 import 'Pages/HomePage.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => HomePage(),
         "cartPage": (context) => CartPage(),
+        "itemPage":(context)=>ItemPage(),
       },
     );
   }

@@ -31,10 +31,10 @@ class CartPage extends StatelessWidget {
                     "Test Our Hot Burger", "2"),
                 OrderList("assets/images/pizza.png", "Hot Pizza",
                     "Test Our Hot Pizza", "3"),
-                OrderList("assets/images/salan.png", "Hot Salan",
-                    "Test Our Hot Salan", "1"),
+                // OrderList("assets/images/salan.png", "Hot Salan",
+                //     "Test Our Hot Salan", "1"),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),

@@ -1,10 +1,9 @@
-// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, use_key_in_widget_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CartBottomNavBar extends StatelessWidget {
-  const CartBottomNavBar({super.key});
-
+class ItemBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -42,14 +41,21 @@ class CartBottomNavBar extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {},
-            child: Text(
-              "Order Now",
-              style: TextStyle(fontSize: 20),
+            child: Row(
+              children: [
+                Icon(CupertinoIcons.cart),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "Add To Cart",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ],
             ),
             style: ButtonStyle(
-                shape: MaterialStateProperty.all(
-                    RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20))),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20))),
                 padding: MaterialStateProperty.all(
                     EdgeInsets.symmetric(horizontal: 20, vertical: 12)),
                 backgroundColor: MaterialStateProperty.all(Colors.red)),

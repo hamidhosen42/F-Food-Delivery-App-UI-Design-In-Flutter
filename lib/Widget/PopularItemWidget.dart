@@ -14,8 +14,13 @@ class PopularItemWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
         child: Row(
           children: [
-            PopulerItem("assets/images/biryani.png", "Chiken Biryani",
-                "Test Our Hot Biryani"),
+            InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, "itemPage");
+              },
+              child: PopulerItem("assets/images/biryani.png", "Chiken Biryani",
+                  "Test Our Hot Biryani"),
+            ),
             PopulerItem("assets/images/burger.png", "Hot Burger",
                 "Test Our Hot Burger"),
             PopulerItem(
