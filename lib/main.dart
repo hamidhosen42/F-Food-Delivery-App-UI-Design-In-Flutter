@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 
+import 'Pages/CardPage.dart';
 import 'Pages/HomePage.dart';
 
 void main(List<String> args) {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       // themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context)=> HomePage(),
+        "/": (context) => HomePage(),
+        "cartPage": (context) => CartPage(),
       },
     );
   }
